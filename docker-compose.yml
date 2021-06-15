@@ -1,10 +1,10 @@
 version: '3.7'
 
 services:
-    kurssitiedot:
+    blogapp:
       build: .
-      stdin_open: true
-      ports: 
-        - 3000:3000
       command: npm start
-      container_name: kurssitiedot
+      ports: 
+        - 3003:3003
+      container_name: blogapp
+

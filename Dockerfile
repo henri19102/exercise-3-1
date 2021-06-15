@@ -1,13 +1,13 @@
 FROM node:15
 
-EXPOSE 3000
+EXPOSE 3003
 
 WORKDIR /usr/src/app
 
 COPY . .
 
-RUN npm install
+RUN yarn install
 
 RUN npm run build
 
-CMD ["node", "index.js"]
+CMD ["npm", "start"]
