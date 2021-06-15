@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+    kurssitiedot:
+      build: .
+      stdin_open: true
+      ports: 
+        - 3000:3000
+      command: npm start
+      container_name: kurssitiedot
